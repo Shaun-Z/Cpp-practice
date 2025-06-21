@@ -17,7 +17,6 @@ data/*
 *.svg
 *.txt
 *.npy
-*.ipynb
 !requirements.txt
 
 # Byte-compiled / optimized / DLL files
