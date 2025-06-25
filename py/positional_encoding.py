@@ -65,7 +65,7 @@ def _test_positional_encoding():
     import matplotlib.pyplot as plt
 
     plt.figure(figsize=(15, 5))
-    pe = get_positional_encoding(20, 100)
+    pe = get_positional_encoding(d_model=20, max_len=100)
     plt.plot(np.arange(100), pe[:, 0, 4:8].numpy())
     plt.legend(["dim %d" % p for p in [4, 5, 6, 7]])
     plt.title("Positional encoding")
